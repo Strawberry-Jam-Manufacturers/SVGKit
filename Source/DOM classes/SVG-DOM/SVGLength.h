@@ -45,6 +45,9 @@ typedef enum SVG_LENGTH_TYPE
 
 @interface SVGLength : NSObject
 
+/** defaults to 300 */
+@property(nonatomic,class) float pixelsPerInch;
+
 @property(nonatomic,readonly) SVG_LENGTH_TYPE unitType;
 @property(nonatomic) float value;
 @property(nonatomic) float valueInSpecifiedUnits;
